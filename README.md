@@ -1,4 +1,13 @@
 # GxEPD2_4G
+
+## About this fork
+Added support for Waveshare 3.7inch e-Paper HAT display\
+[Waveshare Wiki](https://www.waveshare.com/wiki/3.7inch_e-Paper_HAT)
+
+Grey levels with my LUT
+![img.png](img.png)
+![img_1.png](img_1.png)
+
 ## Arduino Display Library for SPI E-Paper Displays
 
 - GxEPD2 variant with support for 4 grey levels on supported e-papers
@@ -69,9 +78,12 @@
 - GDEW029I6FD    2.9" b/w flexible
 - GDEM029T94     2.9" b/w
 - GDEW027W3      2.7" b/w
-- GDEW0371W7     3.7" b/w
+- GDEW0371W7     3.71" b/w 416x240
 - GDEW042T2      4.2" b/w
 - GDEW075T7      7.5" b/w 800x480
+
+### Supported SPI e-paper panels from Waveshare
+- ED037TC1       3.7" b/w 480x280
 
 ### Version 1.0.6
 - added support for mixed b/w and 4G content, fast b/w partial refresh on grey background
