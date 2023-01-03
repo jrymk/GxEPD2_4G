@@ -37,6 +37,7 @@
 #include "epd/GxEPD2_290_I6FD.h"
 #include "epd/GxEPD2_290_T94.h"
 #include "epd/GxEPD2_270.h"
+#include "epd/GxEPD2_370.h"
 #include "epd/GxEPD2_371.h"
 #include "epd/GxEPD2_420.h"
 #include "epd/GxEPD2_750_T7.h"
