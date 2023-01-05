@@ -189,6 +189,7 @@ class GxEPD2_4G_4G_R : public GxEPD2_4G_GFX_BASE_CLASS
     void fillScreen(uint16_t color) // 0x0 black, >0x0 white, to buffer
     {
       uint32_t brightness = (uint32_t(color & 0xF800) + uint32_t((color & 0x07E0) << 5) + uint32_t((color & 0x001F) << 11));
+      if (!brightness) brightness++;
       uint8_t brb = uint8_t((brightness - 1) / 0xC000ul); // GxEPD_LIGHTGREY is one too high
       uint8_t data = brb * 0b01010101;
       for (uint16_t x = 0; x < sizeof(_buffer); x++)
