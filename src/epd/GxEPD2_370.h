@@ -24,8 +24,8 @@ class GxEPD2_370 : public GxEPD2_4G_EPD
     static const uint16_t HEIGHT = 480;
     static const GxEPD2_4G::Panel panel = GxEPD2_4G::ED037TC1;
     static const bool hasColor = false;
-    static const bool hasPartialUpdate = false; // with grey refresh
-    //static const bool hasFastPartialUpdate = false; // with grey refresh
+    static const bool hasPartialUpdate = true; // with grey refresh
+//    static const bool hasFastPartialUpdate = false; // with grey refresh
     static const bool hasFastPartialUpdate = true; // with b/w refresh
     static const uint16_t power_on_time = 100; // ms, e.g. 95868us
     static const uint16_t power_off_time = 150; // ms, e.g. 140350us
